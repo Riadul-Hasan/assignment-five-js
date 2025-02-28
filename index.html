@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-blue-200 min-h-screen">
+    <header class="">
+        <nav class="container mx-auto ">
+            <div class="navbar bg-white rounded-xl p-4">
+                <div class="flex-1">
+                    <div class="flex items-center space-x-2">
+                        <img src="assets/logo.png" alt="">
+                        <a class=" text-2xl">Dev<span class="font-bold">Board</span></a>
+                    </div>
+                </div>
+                <div class="flex-none">
+
+
+                    <div class="flex gap-x-8">
+
+                        <div class="flex bg-[#F4F7FF] p-2 rounded-xl items-center space-x-3">
+                            <img src="assets/checkbox.png" alt="">
+                            <h3 class="text-xl font-bold">22</h3>
+                        </div>
+
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <div class="p-2  bg-[#F4F7FF]">
+
+                                        <img alt="" src="assets/theme-btn.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li>
+                                    <a class="justify-between">
+                                        Profile
+                                        <span class="badge">New</span>
+                                    </a>
+                                </li>
+                                <li><a>Settings</a></li>
+                                <li><a>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Body -->
+    <main>
+        <!-- Discover Something Section -->
+        <section class="bg-red-200 mt-6 container mx-auto">
+            <div class="grid grid-cols-4 gap-4">
+                <div class="col-span-3 p-2">
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="flex p-4 space-x-4 rounded-xl bg-[#F4F7FF] items-center">
+                            <div class="p-4 bg-white rounded-full">
+                                <img src="assets/checkbox.png" alt="">
+                            </div>
+                            <div class=" ">
+                                <p>Task Assigned</p>
+                                <h2 class="text-xl font-bold">05</h2>
+                            </div>
+                        </div>
+
+
+                        <!-- Board -->
+                        <div class="grid col-span-2 cursor-pointer">
+                            <div
+                                class="flex p-4 space-x-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl items-center">
+                                <div class="ml-4">
+                                    <img src="assets/board.png" alt="">
+                                </div>
+                                <div class=" ">
+                                    <h4 class="text-2xl w-3/4 mx-auto font-semibold text-white">Discover Something New
+                                        Today!</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 3rd -->
+                        <div class="flex p-4 space-x-4 bg-[#F4F7FF] rounded-xl items-center">
+                            <div class="p-4 bg-white rounded-full">
+                                <img src="assets/calender.png" alt="">
+                            </div>
+                            <div class=" ">
+                                <h4 class="font-semibold">Wed,</h4>
+                                <h2 class="font-bold">Jul 28 2025 </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="bg-blue-300 p-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia accusamus veritatis quos, molestiae
+                    inventore maiores ipsa, veniam culpa sed dolorum assumenda eum illo neque corporis ad tempora,
+                    temporibus harum. A soluta tempore dolorum cupiditate numquam sequi praesentium ipsa aperiam ullam
+                    nulla molestias repudiandae laboriosam, deleniti, earum optio, tempora labore quae.
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
