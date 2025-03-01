@@ -100,3 +100,22 @@ if (taskRemaining > 0) {
 
   //   console.log(taskRemaining);
 }
+
+// Time format from google
+
+div.classList.add("font-bold");
+
+const optionsWeekday = { weekday: "short" };
+const optionsDate = { month: "short", day: "2-digit", year: "numeric" };
+
+const weekday = new Date().toLocaleDateString("en-US", optionsWeekday);
+const formattedDate = new Date()
+  .toLocaleDateString("en-US", optionsDate)
+  .replace(",", "");
+
+div.innerHTML = `
+    <p>${weekday} ,</p>
+    <p>${formattedDate}</p>
+`;
+
+dateToday.appendChild(div);

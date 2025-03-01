@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-blue-100 p-4 min-h-screen">
+<body class="bg-[#F4F7FF] p-4 min-h-screen">
     <header class="">
         <nav class="container mx-auto ">
             <div class="navbar bg-white rounded-xl p-4">
@@ -48,29 +48,23 @@
                         to select an
                         element in the DOM?</div>
                     <div class="collapse-content p-4 text-gray-500">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <p>There are different ways to select an element in the Document Object Model (DOM). They are:
+                            1. Using query selector. 2.Get element by their id. 3. Get element by their class name. <br>
+                            4.
+                            HTML tag name and so on.</p>
                     </div>
                 </div>
             </div>
 
             <div>
                 <div tabindex="0" class="collapse collapse-open border-base-300 bg-white border">
-                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-2: How do you
-                        create, add, and remove elements using JavaScript?</div>
+                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-2: What is the
+                        difference between innerHTML, innerText, and textContent ?</div>
                     <div class="collapse-content p-4 text-gray-500">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div>
-                <div tabindex="0" class="collapse collapse-open border-base-300 bg-white border">
-                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-3: What is the
-                        difference between innerHTML, innerText, and textContent?</div>
-                    <div class="collapse-content p-4 text-gray-500">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <p>Inner HTML: It includes all the set of HTML tag from a body part. <br>
+                            Inner Text: It access the inner text from any HTML element. Only access the text here. <br>
+                            textContent: It contains all the text content without HTMl tags and it also access hidden
+                            elements.</p>
                     </div>
                 </div>
             </div>
@@ -79,10 +73,33 @@
 
             <div>
                 <div tabindex="0" class="collapse collapse-open border-base-300 bg-white border">
-                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-4: What is the
-                        event delegation in the DOM?</div>
+                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-3: What is event
+                        delegation in the DOM?
+
+                    </div>
                     <div class="collapse-content p-4 text-gray-500">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <p><span class="font-semibold">Event Delegation:</span> When we need to intaract somewhere using
+                            Java Script or
+                            when we need to do
+                            command for the specific portion or element then we use event delegation.
+                            <br> Event delegation gives us the huge object property for our specific tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div tabindex="0" class="collapse collapse-open border-base-300 bg-white border">
+                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-4: What is event
+                        bubbling in the DOM?
+
+                    </div>
+                    <div class="collapse-content p-4 text-gray-500">
+                        <p>Event bubbling means when we generate any event to a specific element then event works there
+                            at first. Then when event finished working then the event is naturally bubbled to its parent
+                            element one by one untill the root of the html.</p>
                     </div>
                 </div>
             </div>
@@ -90,10 +107,17 @@
 
             <div>
                 <div tabindex="0" class="collapse collapse-open border-base-300 bg-white border">
-                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-5: What is the
-                        event bubbling in the DOM?</div>
+                    <div class="collapse-title text-xl font-medium border-b-2 border-gray-200">Question-5: How do you
+                        create, add, and remove elements using JavaScript?
+
+                    </div>
                     <div class="collapse-content p-4 text-gray-500">
-                        <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                        <p>To create element: document.createElement("div") <br>
+                            To add element: We can use appendChild() and prependChild() for adding specific element.
+                            <br>
+                            Remove element: We can remove element by div.remove() or we can use removeChild() too.
+                            ('div' is one of the example)
+                        </p>
                     </div>
                 </div>
             </div>

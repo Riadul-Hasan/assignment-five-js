@@ -47,20 +47,3 @@ function totalTask() {
 
 const dateToday = document.getElementById("date-today");
 const div = document.createElement("div");
-
-// Time format from google
-
-div.classList.add("font-bold");
-const options = {
-  weekday: "short",
-  month: "short",
-  day: "2-digit",
-  year: "numeric",
-};
-const formattedDate = new Date()
-  .toLocaleDateString("en-US", options)
-  .replace(",", "");
-
-div.innerHTML = `<p>${formattedDate}</p>`;
-
-dateToday.appendChild(div);
