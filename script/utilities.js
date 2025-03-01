@@ -7,7 +7,7 @@ function activityHistory(id2, title) {
 
   const activityContainer = document.getElementById(id2);
   const div = document.createElement("div");
-  div.classList.add("mb-4");
+
   div.classList.add("mb-4", "p-4", "bg-[#F4F7FF]", "rounded-lg");
 
   div.innerHTML = `
@@ -43,3 +43,23 @@ function totalTask() {
   totalTaskCompleted = totalTaskCompleted + 1;
   document.getElementById("total-task").innerText = totalTaskCompleted;
 }
+
+const dateToday = document.getElementById("date-today");
+const div = document.createElement("div");
+
+// Time format from google
+
+div.classList.add("font-bold");
+const options = {
+  weekday: "short",
+  month: "short",
+  day: "2-digit",
+  year: "numeric",
+};
+const formattedDate = new Date()
+  .toLocaleDateString("en-US", options)
+  .replace(",", "");
+
+div.innerHTML = `<p>${formattedDate}</p>`;
+
+dateToday.appendChild(div);

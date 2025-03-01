@@ -5,26 +5,19 @@ let taskRemaining = parseInt(
 let totalTaskCompleted = parseInt(
   document.getElementById("total-task").innerText
 );
-// console.log(totalTaskCompleted);
 
-// let count = 0;
-// function taskCompleted() {
-//   taskRemaining = taskRemaining - 1;
-//   document.getElementById("task-remaining").innerText = taskRemaining;
-//   count++;
-
-//   if (taskRemaining === 0) {
-//     alert("Congrats!!! You have completed all the current task");
-//   }
-//   if (count === 6) {
-//     // alert("Board updated successfully");
-//     return;
-//   }
+// if (taskRemaining === 0) {
+//   alert();
 // }
 
-if (taskRemaining === 0) {
-  alert();
-}
+// History Clear
+let history = document.getElementById("activity-history");
+let activityContainer = document.getElementById("activity-container");
+history.addEventListener("click", function () {
+  activityContainer.style.display = "none";
+  activityContainer.innerHTML = "";
+});
+
 if (taskRemaining > 0) {
   // Task 1
   const taskButton = document.getElementById("task-btn-1");
@@ -36,6 +29,7 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   // Task 2
@@ -49,6 +43,7 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   // Task 3
@@ -61,6 +56,7 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   // Task 4
@@ -73,6 +69,7 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   // Task 5
@@ -85,6 +82,7 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   // Task 6
@@ -97,7 +95,11 @@ if (taskRemaining > 0) {
 
     taskCompleted();
     totalTask();
+    activityContainer.style.display = "block";
   });
 
   //   console.log(taskRemaining);
 }
+
+// Activity History Clear
+// const history = document.getElementById("activity-history");
