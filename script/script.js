@@ -100,6 +100,3 @@ if (taskRemaining > 0) {
 
   //   console.log(taskRemaining);
 }
-
-// Activity History Clear
-// const history = document.getElementById("activity-history");
