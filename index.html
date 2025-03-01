@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-[#F4F7FF] h-5/6 p-2">
-    <header class="">
+    <header class="mt-2">
         <nav class="container mx-auto ">
             <div class="navbar bg-white rounded-xl p-4">
                 <div class="flex-1">
@@ -27,7 +27,7 @@
 
                         <div class="flex bg-[#F4F7FF] p-2 rounded-xl items-center space-x-3">
                             <img src="assets/checkbox.png" alt="">
-                            <h3 class="text-xl font-bold">22</h3>
+                            <h3 id="total-task" class="text-xl font-bold">22</h3>
                         </div>
 
                         <div class="dropdown dropdown-end">
@@ -60,18 +60,18 @@
     <!-- Main Body -->
     <main>
         <!-- Discover Something Section -->
-        <section class=" mt-6 container mx-auto">
+        <section class=" mt-6 container mx-auto mb-10">
             <div class="grid grid-cols-4  rounded-xl gap-x-4">
                 <div class="col-span-3 p-2 bg-white rounded-xl  ">
                     <div class="grid grid-cols-4 gap-4 mt-4">
 
-                        <div class="flex p-4  rounded-xl bg-[#F4F7FF] items-center">
+                        <div class="flex p-4 gap-4  rounded-xl bg-[#F4F7FF] items-center">
                             <div class="p-4 bg-white rounded-full">
                                 <img src="assets/checkbox.png" alt="">
                             </div>
-                            <div class=" ">
+                            <div class="font-semibold">
                                 <p>Task Assigned</p>
-                                <h2 class="text-xl font-bold">6</h2>
+                                <h2 id="task-remaining" class="text-xl font-bold">6</h2>
                             </div>
                         </div>
 
@@ -109,12 +109,12 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">ShopEase</button>
-                                <h2 class="text-lg font-semibold">Fix Mobile Button Issue </h2>
+                                <h2 id="task1-title" class="text-lg font-semibold">Fix Mobile Button Issue </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                    works properly and ensure onClick works properly
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg  ">
+                                    Fix the mobile button issue by debugging overlapping elements and ensuring proper
+                                    onClick functionality.
 
                                 </div>
 
@@ -126,7 +126,7 @@
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-1" class="btn btn-primary  rounded-lg">Completed</button>
                                 </div>
 
 
@@ -142,11 +142,11 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">CloudSync</button>
-                                <h2 class="text-lg font-semibold">Add Dark Mode </h2>
+                                <h2 id="task2-title" class="text-lg font-semibold">Add Dark Mode </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg  ">
+                                    Implement Dark Mode by saving user preferences
                                     works properly and ensure onClick works properly
 
                                 </div>
@@ -156,7 +156,7 @@
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-2" class="btn btn-primary rounded-lg">Completed</button>
                                 </div>
 
 
@@ -173,12 +173,11 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">SwiftPay</button>
-                                <h2 class="text-lg font-semibold">Optimize Home page  </h2>
+                                <h2 id="task3-title" class="text-lg font-semibold">Optimize Home page  </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                    works properly and ensure onClick works properly
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg  ">
+                                    Enhance the homepage by improving performance, layout, and user experience properly.
 
                                 </div>
 
@@ -187,7 +186,7 @@
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-3" class="btn btn-primary rounded-lg">Completed</button>
                                 </div>
 
 
@@ -202,12 +201,12 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">Meta</button>
-                                <h2 class="text-lg font-semibold">Add new emoji 🤲 </h2>
+                                <h2 id="task4-title" class="text-lg font-semibold">Add new emoji 🤲 </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                    works properly and ensure onClick works properly
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg  ">
+                                    Introduce new emojis to enhance user expression, accessibility, engagement, and
+                                    interaction.
 
                                 </div>
 
@@ -216,7 +215,7 @@
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-4" class="btn btn-primary rounded-lg">Completed</button>
                                 </div>
 
 
@@ -232,12 +231,12 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">Google LLC</button>
-                                <h2 class="text-lg font-semibold">Integrate OpenAI API </h2>
+                                <h2 id="task5-title" class="text-lg font-semibold">Integrate OpenAI API </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                    works properly and ensure onClick works properly
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg ">
+                                    Integrate OpenAI API to enhance automation, intelligence, user experience, and
+                                    seamless interactions.
 
                                 </div>
 
@@ -246,7 +245,7 @@
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-5" class="btn btn-primary rounded-lg">Completed</button>
                                 </div>
 
 
@@ -262,21 +261,22 @@
                         <div class="card bg-[#F4F7FF]  shadow-xl">
                             <div class="card-body">
                                 <button class="bg-white w-2/5 p-2 rounded-lg">Glassdoar</button>
-                                <h2 class="text-lg font-semibold">Improve Job searching </h2>
+                                <h2 id="task6-title" class="text-lg font-semibold">Improve Job searching </h2>
 
 
-                                <div class="bg-white p-2 h-18 rounded-lg overflow-scroll ">
-                                    Debug using Chrome DevTools, check for overlapping elements, and ensure onClick
-                                    works properly and ensure onClick works properly
+                                <div class="bg-white text-gray-500 p-2 h-auto rounded-lg  ">
+                                    "Improve job searching with better filters, smarter recommendations, and enhanced
+                                    user experience."
 
                                 </div>
+
 
                                 <div class="flex justify-between mt-4">
                                     <div>
                                         <p>Deadline</p>
                                         <h3 class="font-semibold">21 March 2025</h3>
                                     </div>
-                                    <button class="btn btn-primary rounded-lg">Completed</button>
+                                    <button id="task-btn-6" class="btn btn-primary rounded-lg">Completed</button>
                                 </div>
 
 
@@ -306,6 +306,10 @@
                     </div>
 
 
+                    <!-- activity history -->
+                    <div id="activity-container" class="mt-4 p-2 space-y-2 rounded-lg">
+
+                    </div>
 
 
                 </div>
@@ -316,6 +320,11 @@
 
 
     </main>
+
+
+
+    <script src="script/utilities.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
