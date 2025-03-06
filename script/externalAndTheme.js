@@ -6,7 +6,7 @@ themeChange.addEventListener("click", function () {
   const randomThemeB = Math.random() * 255;
   const randomTheme = `rgb(${randomThemeR}, ${randomThemeG}, ${randomThemeB})`;
   document.getElementById("body-part").style.backgroundColor = randomTheme;
-  console.log(randomTheme);
+  //   console.log(randomTheme);
 });
 
 // Entering blogs page
